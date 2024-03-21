@@ -22,10 +22,10 @@ export default function Nav() {
               <motion.h1 initial={{scale: 0.3, opacity: 0.3}} whileInView={{scale: 1, opacity: 1}} transition={{duration: 1, ease: 'anticipate'}} className='text-white text-4xl'>link 3</motion.h1>
             </div>
           </div> }
-      <div className='w-full h-content flex justify-between items-center absolute bg-transparent p-2 overflow-auto'>
+      <div className='w-full h-content flex justify-between items-center absolute bg-transparent p-7 overflow-auto'>
           <h1 className='text-4xl text-white'>Logo</h1>
           <motion.div  initial={{scale: 0.4, opacity: 0.3}}  whileTap={{scale: 0.1, rotate: 320, opacity: 0.2}} whileInView={{scale: 1, opacity: 1}} ><TbMenuDeep onClick={() => setIsOpen(!isOpen)} className='md:hidden' size={45} color='white'  /></motion.div>
-          <nav className='border text-white hidden border-orange-600 md:flex justify-between items-center w-[68%]'>
+          <nav className=' text-white text-3xl hidden md:flex justify-between items-center w-[50%]'>
               <Link href={'/'}>Home</Link>
               <Link href={'/Services'}>Services</Link>
               <Link href={'/Contact'}>Contact</Link>
